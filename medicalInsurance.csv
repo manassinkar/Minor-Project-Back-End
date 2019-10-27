@@ -1,0 +1,60 @@
+index,policyName,companyName,coverInL,cashlessHospitals,premiumMonthly,premiumYearly
+1,NCB Super Premium,Religare Health Insurance,5.5,166,597,7157
+2,Care  ,Religare Health Insurance,5,166,527,6317
+3,Care Freedom,Religare Health Insurance,5,166,520,6233
+4,Joy Tomorrow,Religare Health Insurance,5,166,2043,24509
+5,Care with unlimited recharge,Religare Health Insurance,6,166,600,7193
+6,NCB Super premium with UAR,Religare Health Insurance,5.5,166,637,7637
+7,Care Freedom with Health-Checkup,Religare Health Insurance,5,166,963,11549
+8,Care Heart,Religare Health Insurance,5,166,768,9209
+9,Health Companion with Recharge (Money Saver),Max Bupa Health Insurance,6,127,560,6713
+10,Health Companion with Health Recharge (Double Dhamaka),Max Bupa Health Insurance,10,127,666,7985
+11,Health Companion,Max Bupa Health Insurance,5,127,595,7133
+12,Go active,Max Bupa Health Insurance,5,127,733,8789
+13,Heartbeat Gold,Max Bupa Health Insurance,5,127,900,10793
+14,Medic Classic,Star Health Insurance,5,197,536,6425
+15,Diabetes Safe Plan - B,Star Health Insurance,5,197,1226,14705
+16,Star Comprehensive,Star Health Insurance,5,197,690,8273
+17,Diabetes Safe Plan - A,Star Health Insurance,5,197,966,11585
+18,Optima Restore,Apollo Munich Health Insurance,5,117,703,8429
+19,Easy Health Individual Standard,Apollo Munich Health Insurance,5,117,602,7217
+20,Easy Health Individual Exclusive,Apollo Munich Health Insurance,5,117,722,8657
+21,Easy Health Individual Standard,Apollo Munich Health Insurance,5,117,894,10721
+22,Health Wallet,Apollo Munich Health Insurance,5,117,1145,13733
+23,Energy Gold,Apollo Munich Health Insurance,5,117,1446,17345
+24,Energy Silver,Apollo Munich Health Insurance,5,117,954,11441
+25,Energy Gold with Co-Pay,Apollo Munich Health Insurance,5,117,1258,15089
+26,Energy Silver with Co-Pay,Apollo Munich Health Insurance,5,117,766,9185
+27,My:health Suraksha Silver Smart,HDFC ERGO,5,216,729,8741
+28,Activ Assumre - Diamond,Aditya Birla Capital ,5,128,531,6365
+29,Acti Health Enhance,Aditya Birla Capital ,6,128,686,8225
+30,Acti Health Enhance (Diabetes),Aditya Birla Capital ,6,128,2903,34829
+31,Acti Health Enhance (Asthama),Aditya Birla Capital ,6,128,1241,14885
+32,Acti Health Enhance (Hypertension),Aditya Birla Capital ,5,128,2213,26549
+33,Activ Assure – Diamond with Super NCB,Aditya Birla Capital ,5,128,584,7001
+34,Activ Assure – Diamond with Unlimited Reload,Aditya Birla Capital ,5,128,568,6809
+35,Activ Assure – Diamond with Super NCB and Unlimited Reload,Aditya Birla Capital ,5,128,621,7445
+36,Lifeline Supreme,Royal Sundaram General Insurance,5,201,438,5249
+37,Elite Combo,Liberty General Insurance,10,416,686,8225
+38,Elite,Liberty General Insurance,5,416,477,5717
+39,Basic,Liberty General Insurance,6,416,437,5237
+40,Supreme ,Liberty General Insurance,6,416,530,6353
+41,E Connect,Liberty General Insurance,5,416,382,4577
+42,Individual Health Guard,Bajaj Alliance,5,306,628,7529
+43,Health Ensure,Bajaj Alliance,5,306,454,5441
+44,Complete Healthcare Insurance Privilege,Universal Sompo General Insurance,6,114,547,6557
+45,Complete Healthcare Insurance Essential,Universal Sompo General Insurance,5,114,533,6389
+46,Health QuBE Super Saver,Raheja QBE,5,192,185,2213
+47,Health QuBE Basic,Raheja QBE,5,192,226,2705
+48,Health QuBE Comprehensive,Raheja QBE,5,192,315,3773
+49,Edelweiss Health Insurance - Silver,Edelweiss Health Insurance,5,199,330,3953
+50,Edelweiss Health Insurance - Gold,Edelweiss Health Insurance,5,199,467,5597
+51,Health Gain,Reliance General Insurance,6,149,578,6929
+52,Individual Mediclaim Policy,Oriental Insurance,6,200,746,8945
+53,More Health Insurance with MoreCover,Reliance General Insurance,5,170,601,7205
+54,More Health Insurance with MoreGlobal,Reliance General Insurance,5,170,601,7205
+55,More Health Insurance with MoreTime,Reliance General Insurance,5,170,554,6641
+56,Health Total Vital,Future Generali Total Insurance Solutions,5,137,611,7325
+57,Click 2 protect health,HDFC Life,5,0,1351,16205
+58,Individual Health Protector,IFFCO TOKIO,5,188,438,5249
+59,kotak Healthcare Premium ,Kotak General Insurance,5,87,538,6449
