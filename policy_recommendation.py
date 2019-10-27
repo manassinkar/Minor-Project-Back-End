@@ -8,6 +8,12 @@ from sklearn.metrics.pairwise import cosine_similarity
 def get_premiumYearly_from_index(index):
 	return df[df.index == index]["premiumYearly"].values[0]
 
+def get_premiumMonthly_from_index(index):
+	return df[df.index == index]["premiumMonthly"].values[0]
+
+def get_cashlessHospitals_from_index(index):
+	return df[df.index == index]["cashlessHospitals"].values[0]
+
 def get_coverInL_from_index(index):
 	return df[df.index == index]["coverInL"].values[0]
 
@@ -22,14 +28,14 @@ def get_index_from_policyName(policy):
 
 df = pd.read_csv("medicalInsurance.csv")
 
-features = ['companyName','premiumYearly','coverInL','cashlessHospitals']
+features = ['premiumYearly','coverInL','companyName']
 
 for feature in features:
 	df[feature] = df[feature].fillna('')
 
 def combine_features(row):
 	try:
-		return str(row['companyName'])+" "+str(row["premiumYearly"])+" "+str(row["coverInL"])+" "+str(row["cashlessHospitals"])
+		return str(row["premiumYearly"])+" "+str(row["coverInL"])+" "+str(row['companyName'])
 	except:
 		print("Error")
 
@@ -52,11 +58,13 @@ x=[]
 
 i=0
 for element in sorted_similar_policies:
-		a = dict(srNo=i+1,
+		a = dict(
 			index=element[0],
 			policyName=get_policyName_from_index(element[0]),
 			companyName=get_companyName_from_index(element[0]),
 			coverInL=int(get_coverInL_from_index(element[0])),
+			cashlessHospitals=int(get_cashlessHospitals_from_index(element[0])),
+			premiumMonthly=int(get_premiumMonthly_from_index(element[0])),
 			premiumYearly=int(get_premiumYearly_from_index(element[0])))
 		x.append(a)
 		i=i+1
