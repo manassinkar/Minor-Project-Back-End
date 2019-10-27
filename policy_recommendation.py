@@ -46,9 +46,8 @@ cv = CountVectorizer()
 count_matrix = cv.fit_transform(df["combined_features"])
 
 cosine_sim = cosine_similarity(count_matrix)
-policy_user_likes = sys.argv[1]
 
-policy_index = get_index_from_policyName(policy_user_likes)
+policy_index = int(sys.argv[1])
 
 similar_policies =  list(enumerate(cosine_sim[policy_index]))
 

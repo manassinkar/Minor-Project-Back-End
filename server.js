@@ -28,3 +28,5 @@ app.use(bodyParser.json());
 const recommendation = require('./recommendation/recommendation');
 
 app.get('/recommend',recommendation.recommend);
+app.use('/policy',require('./routes/policy.route'));
+app.use('/user',require('./routes/user.route'));
