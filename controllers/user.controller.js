@@ -74,3 +74,24 @@ exports.login = (req,res) =>
         }
     })
 };
+exports.viewProfile = (req,res) =>
+{
+    User.findOne({ username: req.query.username },{ password: 0 },(err,ans) =>
+    {
+        if(err)
+        {
+            res.status(500).send({ message: 'Error while fetching User Information', error: err });
+        }
+        else
+        {
+            if(ans)
+            {
+                res.status(200).send(ans);
+            }
+            else
+            {
+                res.status(404).send({ message: 'User does not exist, please register' });
+            }
+        }
+    })
+}
