@@ -58,7 +58,7 @@ x=[]
 i=0
 for element in sorted_similar_policies:
 		a = dict(
-			index=element[0],
+			index=(element[0]-1),
 			policyName=get_policyName_from_index(element[0]),
 			companyName=get_companyName_from_index(element[0]),
 			coverInL=int(get_coverInL_from_index(element[0])),
