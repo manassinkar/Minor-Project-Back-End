@@ -28,14 +28,14 @@ def get_index_from_policyName(policy):
 
 df = pd.read_csv("medicalInsurance.csv")
 
-features = ['premiumYearly','coverInL','companyName']
+features = ['premiumYearly','coverInL']#,'cashlessHospitals'
 
 for feature in features:
 	df[feature] = df[feature].fillna('')
 
 def combine_features(row):
 	try:
-		return str(row["premiumYearly"])+" "+str(row["coverInL"])+" "+str(row['companyName'])
+		return str(row["premiumYearly"])+" "+str(row["coverInL"])#+" "+str(row['cashlessHospitals'])
 	except:
 		print("Error")
 
@@ -58,7 +58,7 @@ x=[]
 i=0
 for element in sorted_similar_policies:
 		a = dict(
-			index=(element[0]-1),
+			index=(element[0]),
 			policyName=get_policyName_from_index(element[0]),
 			companyName=get_companyName_from_index(element[0]),
 			coverInL=int(get_coverInL_from_index(element[0])),
