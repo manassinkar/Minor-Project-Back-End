@@ -2,7 +2,7 @@ exports.recommend = (req,res) =>
 {
     var spawn = require('child_process').spawn;
     var recommendationPythonScript = "policy_recommendation.py";
-    var process = spawn('python',[recommendationPythonScript,req.query.policyIndex] ); 
+    var process = spawn('python',[recommendationPythonScript,req.query.policyIndex+1] ); 
     process.stdout.on('data', function(data)
     {
         data = data.toString();
