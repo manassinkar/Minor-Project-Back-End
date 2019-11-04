@@ -55,7 +55,7 @@ exports.addPolicy = (req,res) =>
                                 premiumYearly: req.body.premiumYearly
                             }
                             const parser = new Parser();
-                            const csv = parser.parse(toCsv) + newLine;
+                            const csv = parser.parse(toCsv);
                             var x = csv.indexOf("Yearly");
                             x=x+8;
                             var y = csv.length;
