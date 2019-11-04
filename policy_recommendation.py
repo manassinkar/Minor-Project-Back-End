@@ -65,8 +65,10 @@ for element in sorted_similar_policies:
 			cashlessHospitals=int(get_cashlessHospitals_from_index(element[0])),
 			premiumMonthly=int(get_premiumMonthly_from_index(element[0])),
 			premiumYearly=int(get_premiumYearly_from_index(element[0])))
-		x.append(a)
+		if(int(element[0])!=int(sys.argv[1])):
+			x.append(a)
 		i=i+1
-		if i>4:
+		if i>5:
 			break
-print(json.dumps(x))
+f= open("recommendationData.txt","w+")
+f.write(json.dumps(x))

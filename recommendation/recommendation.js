@@ -1,13 +1,11 @@
+var fs = require('fs');
 exports.recommend = (req,res) =>
 {
-    var spawn = require('child_process').spawn;
+    var exec = require('child_process').execSync;
     var recommendationPythonScript = "policy_recommendation.py";
-    var process = spawn('python',[recommendationPythonScript,req.query.policyIndex+1] ); 
-    process.stdout.on('data', function(data)
-    {
-        data = data.toString();
-        data = JSON.parse(data);
-        //console.log(data);
-        res.send(data); 
-    });
+    var z = req.query.policyIndex;
+    var x = parseInt(z)+1;
+    var process = exec('python '+recommendationPythonScript+' '+x.toString());
+    var data = fs.readFileSync('recommendationData.txt',{encoding: 'utf-8'});
+    res.status(200).send(JSON.parse(data));
 }
