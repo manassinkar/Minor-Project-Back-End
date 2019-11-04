@@ -67,6 +67,6 @@ for element in sorted_similar_policies:
 			premiumYearly=int(get_premiumYearly_from_index(element[0])))
 		x.append(a)
 		i=i+1
-		if i>9:
+		if i>4:
 			break
 print(json.dumps(x))
