@@ -49,7 +49,7 @@ cosine_sim = cosine_similarity(count_matrix)
 
 policy_index = int(sys.argv[1])
 
-similar_policies =  list(enumerate(cosine_sim[policy_index]))
+similar_policies =  list(enumerate(cosine_sim[policy_index-1]))
 
 sorted_similar_policies = sorted(similar_policies,key=lambda x:x[1],reverse=True)
 
